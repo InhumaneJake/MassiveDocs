@@ -6,7 +6,8 @@
 Massive Documentation
 ===================================
 
-Contents:
+Core Concepts
+~~~~~~~~~~~~~
 
 .. toctree::
    :maxdepth: 2
