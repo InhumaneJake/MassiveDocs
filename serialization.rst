@@ -6,6 +6,7 @@ Serialization (and deserialization) is a very important concept in computer scie
 There are many different ways to serialize and deserialize data, each with its own set of strengths and weaknesses. For the needs of real-time networked games, the process of serializing and deserializing must be both quick and compact.
 
 By default, MassiveNet provides serialization and deserialization of the following types:
+
 *bool
 *byte
 *short
