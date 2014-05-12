@@ -12,6 +12,9 @@ Core Concepts
 .. toctree::
    :maxdepth: 2
    
+   features
    views
    scope
+   synchronization
+   serialization
 
