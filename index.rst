@@ -6,13 +6,21 @@
 Massive Documentation
 ===================================
 
-Core Concepts
+Introduction
 ~~~~~~~~~~~~~
 
 .. toctree::
    :maxdepth: 2
    
    features
+   
+Core Concepts
+~~~~~~~~~~~~~
+
+.. toctree::
+   :maxdepth: 2
+   
+   
    views
    scope
    synchronization
