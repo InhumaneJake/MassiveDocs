@@ -7,18 +7,18 @@ There are many different ways to serialize and deserialize data, each with its o
 
 By default, MassiveNet provides serialization and deserialization of the following types:
 
-*bool
-*byte
-*short
-*ushort
-*int
-*uint
-*float
-*double
-*string
-*Vector2
-*Vector3
-*Quaternion
+* bool
+* byte
+* short
+* ushort
+* int
+* uint
+* float
+* double
+* string
+* Vector2
+* Vector3
+* Quaternion
 
 
 This is not the end of supported types, however. MassiveNet allows the definition of "Type Codecs", which are simply separate methods for both serialization and deserialization of a custom type.
