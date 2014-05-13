@@ -12,6 +12,7 @@ Introduction
 .. toctree::
    :maxdepth: 2
    
+   overview
    features
    
 Core Concepts
