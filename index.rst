@@ -14,6 +14,7 @@ Introduction
    
    overview
    features
+   getting_started
    
 Core Concepts
 ~~~~~~~~~~~~~
