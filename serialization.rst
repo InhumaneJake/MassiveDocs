@@ -51,10 +51,9 @@ For example, lets say I have a class called PlayerData. Here's what it might loo
   }
 
 
-Now, all that is needed is to register the static methods responsible for serializing and deserializing PlayerData. To do this, all you must do is call the following from anywhere:
+Now, all that is needed is to register the static methods responsible for serializing and deserializing PlayerData. To do this, all you must do is call the following from anywhere::
 
-::
-NetSerializer.AddCodec<PlayerData>(PlayerData.SerializePlayerData, PlayerData.DeserializePlayerData);
+  NetSerializer.AddCodec<PlayerData>(PlayerData.SerializePlayerData, PlayerData.DeserializePlayerData);
 
 
 
