@@ -24,9 +24,8 @@ By default, MassiveNet provides serialization and deserialization of the followi
 This is not the end of supported types, however. MassiveNet allows the definition of "Type Codecs", which are simply separate methods for both serialization and deserialization of a custom type.
 
 
-For example, lets say I have a class called PlayerData. Here's what it might look like:
+For example, lets say I have a class called PlayerData. Here's what it might look like::
 
-::
   class PlayerData
   {
     string name = "Bob";
