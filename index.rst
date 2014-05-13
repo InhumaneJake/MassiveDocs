@@ -28,3 +28,10 @@ Core Concepts
    synchronization
    serialization
 
+Support
+~~~~~~~~~~~~~
+
+Support is just an email away. If at any point you feel stuck, want a second opinion, or want to provide feedback, we want to hear from you!
+
+support@inhumanesoftware.com
+
