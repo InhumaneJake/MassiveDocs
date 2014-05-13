@@ -1,7 +1,7 @@
 Getting Started
 =================
 
-MassiveNet comes with an example project designed to introduce you to the basics of using the library. There are three separate projects nested under the Massive > Examples > NetSimple folder. You'll find Client, Lobby, and Server folders, each containing their own scripts and scenes. 
+MassiveNet comes with an example project designed to introduce you to the basics of using the library. There are three separate projects nested under the Massive > Examples > NetSimple folder. You'll find Client, Lobby, and Server folders, each containing their own scripts, prefabs, and scenes. 
 
 The main scripts to pay attention to are the ClientModel, ServerModel, and LobbyModel scripts. They are responsible for NetSocket configuration and startup as well as basic logic for handling connections. 
 
