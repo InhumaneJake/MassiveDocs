@@ -24,15 +24,15 @@ By default, MassiveNet provides serialization and deserialization of the followi
 This is not the end of supported types, however. MassiveNet allows the definition of "Type Codecs", which are simply separate methods for both serialization and deserialization of a custom type.
 
 
-For example, lets say I have a class called PlayerData. Here's what it might look like::
+For example, lets say there is a class called PlayerData. Here's what it might look like::
 
-  class PlayerData
+  public class PlayerData
   {
-    string name = "Bob";
-    int hp = "93";
-    Vector3 position = new Vector3(118, 0, 10);
+    public string name = "Bob";
+    public int hp = "93";
+    public Vector3 position = new Vector3(118, 0, 10);
     
-    static void SerializePlayerData(NetStream stream, object instance)
+    public static void SerializePlayerData(NetStream stream, object instance)
     {
       PlayerData data = (PlayerData)instance;
       stream.WriteString(data.name);
@@ -40,7 +40,7 @@ For example, lets say I have a class called PlayerData. Here's what it might loo
       stream.WriteVector3(data.position);
     }
     
-    static object DeserializePlayerData(NetStream stream)
+    public static object DeserializePlayerData(NetStream stream)
     {
       PlayerData data = new PlayerData();
       data.name = stream.ReadString();
