@@ -27,29 +27,29 @@ This is not the end of supported types, however. MassiveNet allows the definitio
 For example, lets say I have a class called PlayerData. Here's what it might look like:
 
 ::
-class PlayerData
-{
-  string name = "Bob";
-  int hp = "93";
-  Vector3 position = new Vector3(118, 0, 10);
-  
-  static void SerializePlayerData(NetStream stream, object instance)
+  class PlayerData
   {
-    PlayerData data = (PlayerData)instance;
-    stream.WriteString(data.name);
-    stream.WriteInt(data.hp);
-    stream.WriteVector3(data.position);
+    string name = "Bob";
+    int hp = "93";
+    Vector3 position = new Vector3(118, 0, 10);
+    
+    static void SerializePlayerData(NetStream stream, object instance)
+    {
+      PlayerData data = (PlayerData)instance;
+      stream.WriteString(data.name);
+      stream.WriteInt(data.hp);
+      stream.WriteVector3(data.position);
+    }
+    
+    static object DeserializePlayerData(NetStream stream)
+    {
+      PlayerData data = new PlayerData();
+      data.name = stream.ReadString();
+      data.hp = stream.ReadInt();
+      data.position = stream.ReadVector3();
+      return data;
+    }
   }
-  
-  static object DeserializePlayerData(NetStream stream)
-  {
-    PlayerData data = new PlayerData();
-    data.name = stream.ReadString();
-    data.hp = stream.ReadInt();
-    data.position = stream.ReadVector3();
-    return data;
-  }
-}
 
 
 Now, all that is needed is to register the static methods responsible for serializing and deserializing PlayerData. To do this, all you must do is call the following from anywhere:
