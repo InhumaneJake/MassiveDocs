@@ -6,7 +6,9 @@
 Massive Documentation
 ===================================
 
-Welcome to the MassiveNet documentation. MassiveNet is currently in beta and undergoing heavy development. If you have any difficulties with MassiveNet, notice any errors in the documentation, or want to provide feedback/suggestions, please send us an email at support@inhumanesoftware.com
+Welcome to the MassiveNet documentation. MassiveNet is currently in beta and undergoing heavy development.
+
+If you have any difficulties with MassiveNet, notice any errors in the documentation, or want to provide feedback/suggestions, please send us an email at support@inhumanesoftware.com
 
 
 Introduction
