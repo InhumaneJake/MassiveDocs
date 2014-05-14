@@ -12,7 +12,6 @@ Introduction
 .. toctree::
    :maxdepth: 2
    
-   overview
    features
    getting_started
    
