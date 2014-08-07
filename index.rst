@@ -26,11 +26,11 @@ Core Concepts
 .. toctree::
    :maxdepth: 2
    
-   zones
    views
    instantiation
    synchronization
    serialization
+   zones
    scope
    
 Support
