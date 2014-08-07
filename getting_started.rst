@@ -24,10 +24,10 @@ Here is a breakdown of how this example works:
   
   5. When a Client connects to Server 1, the Server informs the Client that it will be sending numeric assignments for RPC method names. This is because both Servers are configured to be Protocol Authorities. A Protocol Authority is reponsible for assigning automatically generated numeric Ids to RPC method names. The Server first sends all of the assignments for its own NetRPC methods, and then the Client will request assignments for any NetRPC methods unique to the Client.
   
-  7. Once RPC IDs have been resolved, the connection is complete. Server 1's ZoneServer component then sends an RPC to the Client's ZoneClient component, informing it that it must connect to Server 2.
+  6. Once RPC IDs have been resolved, the connection is complete. Server 1's ZoneServer component then sends an RPC to the Client's ZoneClient component, informing it that it must connect to Server 2.
   
-  8. If the Client has successfully connected to Server 2, it will inform Server 1 that Zone setup is complete.
+  7. If the Client has successfully connected to Server 2, it will inform Server 1 that Zone setup is complete.
   
-  9. Upon successful Zone setup, the Client signals to Server 1 that it would like to be spawned. Server 1 will then instantiate a Player object for the Client via the ViewManager component.
+  8. Upon successful Zone setup, the Client signals to Server 1 that it would like to be spawned. Server 1 will then instantiate a Player object for the Client via the ViewManager component.
   
-  11. The Client can now freely move it's Player object around the game world. When the Client's Player gets close enough to the Sphere zone, the Client's Player object will be seamlessly handed off to Server 2, which is responsible for the area around the Sphere. The Client can see the AI objects from both servers if it is in range, but only one of the two Servers will handle the Client's Player object at any one time.
+  9. The Client can now freely move it's Player object around the game world. When the Client's Player gets close enough to the Sphere zone, the Client's Player object will be seamlessly handed off to Server 2, which is responsible for the area around the Sphere. The Client can see the AI objects from both servers if it is in range, but only one of the two Servers will handle the Client's Player object at any one time.
