@@ -28,6 +28,7 @@ Core Concepts
    
    zones
    views
+   instantiation
    scope
    synchronization
    serialization
