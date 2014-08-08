@@ -29,6 +29,7 @@ Core Concepts
    views
    instantiation
    synchronization
+   rpcs
    scope
    serialization
    zones
