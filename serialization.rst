@@ -13,6 +13,7 @@ By default, MassiveNet provides serialization and deserialization of the followi
 * ushort
 * int
 * uint
+* long
 * float
 * double
 * string
