@@ -4,7 +4,7 @@ Features
 * Full source code included.
 * Supports fully authoritative servers.
 * Low overhead.
-* Easy to move from Unity Networking to Massive Net.
+* Easy to move from Unity Networking to MassiveNet.
 * Supports large number of concurrent connections.
 * Support for seamless hand-off.
 * Clients can connect to multiple servers at once.

@@ -21,39 +21,38 @@ By default, MassiveNet provides serialization and deserialization of the followi
 * Quaternion
 
 
-This is not the end of supported types, however. MassiveNet allows the definition of "Type Codecs", which are simply separate methods for both serialization and deserialization of a custom type.
+This is not the end of supported types, however. MassiveNet allows the use of custom (de)serializers, which are simply separate methods for both serialization and deserialization of a custom type.
 
 
 For example, lets say there is a class called PlayerData. Here's what it might look like::
 
-  public class PlayerData
-  {
-    public string name = "Bob";
-    public int hp = "93";
-    public Vector3 position = new Vector3(118, 0, 10);
+  public class PlayerData {
+  
+    string name;
+    int hp;
+    Vector3 position;
     
-    public static void SerializePlayerData(NetStream stream, object instance)
-    {
+    public static void SerializePlayerData(NetStream stream, object instance) {
       PlayerData data = (PlayerData)instance;
       stream.WriteString(data.name);
       stream.WriteInt(data.hp);
       stream.WriteVector3(data.position);
     }
     
-    public static object DeserializePlayerData(NetStream stream)
-    {
+    public static object DeserializePlayerData(NetStream stream) {
       PlayerData data = new PlayerData();
       data.name = stream.ReadString();
       data.hp = stream.ReadInt();
       data.position = stream.ReadVector3();
       return data;
     }
+    
   }
 
 
 Now, all that is needed is to register the static methods responsible for serializing and deserializing PlayerData. To do this, all you must do is call the following from anywhere::
 
-  NetSerializer.AddCodec<PlayerData>(PlayerData.SerializePlayerData, PlayerData.DeserializePlayerData);
+  NetSerializer.Add<PlayerData>(PlayerData.SerializePlayerData, PlayerData.DeserializePlayerData);
 
 
 
