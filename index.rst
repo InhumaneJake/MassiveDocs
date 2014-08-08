@@ -29,9 +29,10 @@ Core Concepts
    views
    instantiation
    synchronization
+   scope
    serialization
    zones
-   scope
+   
    
 Support
 ~~~~~~~~~~~~~
