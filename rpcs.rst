@@ -68,7 +68,7 @@ For example::
      
      [NetRPC]
      void ReceiveGreeting(string greeting, NetConnection sender) {
-         Debug.Log("Received this greeting from {0}: {1}", greeting, sender.Endpoint);
+         Debug.Log("Received a greeting from " + sender.Endpoint + ": " + greeting);
      }
  }
 
